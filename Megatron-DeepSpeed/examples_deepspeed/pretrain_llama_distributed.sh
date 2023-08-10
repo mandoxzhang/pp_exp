@@ -1,5 +1,6 @@
 #!/bin/bash
 # This example script is contributed by external user https://github.com/LydiaXiaohongLi
+exportCUDA_VISIBLE_DEVICES
 set -ex
 
 ######################################
@@ -23,7 +24,7 @@ NODE_RANK=0
 
 HIDDEN_SIZE=2048 # e.g. llama-13b: 5120
 FFN_HIDDEN_SIZE=5504 # e.g. llama-13b: 13824
-NUM_LAYERS=24 # e.g. llama-13b: 40
+NUM_LAYERS=2 # e.g. llama-13b: 40
 NUM_HEADS=16 # e.g. llama-13b: 40
 SEQ_LENGTH=2048
 
